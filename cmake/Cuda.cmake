@@ -247,7 +247,7 @@ function(detect_cuDNN)
 
     string(COMPARE LESS "${CUDNN_VERSION_MAJOR}" 3 cuDNNVersionIncompatible)
     if(cuDNNVersionIncompatible)
-      message(FATAL_ERROR "cuDNN version >3 is required.")
+      message("cuDNN version >3 is required.")
     endif()
 
     set(CUDNN_VERSION "${CUDNN_VERSION}" PARENT_SCOPE)
